@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.main-layout {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.food-bin {
+    width: 30%;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.food-item {
+    background-color: #e1e8ed;
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.food-item:active {
+    cursor: grabbing;
+    transform: scale(1.05);
+}
+
+.plate-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.veggie {
+    height: 50%;
+    background-color: #2ecc71; /* Green */
+}
+
+.half-zones {
+    height: 50%;
+    display: flex;
+}
+
+.protein {
+    width: 50%;
+    background-color: #e74c3c; /* Red */
+}
+
+.carb {
+    width: 50%;
+    background-color: #f39c12; /* Orange */
+}
+
+.score-board {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

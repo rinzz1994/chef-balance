@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Balance: The Perfect Plate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Chef Balance</h1>
+            <p>ลากอาหารลงในโซนที่ถูกต้องเพื่อให้ได้คะแนนสูงสุด!</p>
+        </header>
+
+        <div class="main-layout">
+            <div id="food-source" class="food-bin">
+                <h2>วัตถุดิบ</h2>
+                </div>
+
+            <div class="plate-container">
+                <div class="plate">
+                    <div id="veggie-zone" class="zone veggie" data-type="veggie">
+                        <span>ผัก (50%)</span>
+                        <div class="items-container"></div>
+                    </div>
+                    <div class="half-zones">
+                        <div id="protein-zone" class="zone protein" data-type="protein">
+                            <span>โปรตีน (25%)</span>
+                            <div class="items-container"></div>
+                        </div>
+                        <div id="carb-zone" class="zone carb" data-type="carb">
+                            <span>คาร์บ (25%)</span>
+                            <div class="items-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="score-board">
+   <h2>เวลาที่เหลือ: <span id="timer">30</span> วินาที</h2> 
+    <h2>คะแนนความสมดุล: <span id="total-score">0</span> / 100</h2>
+    <p id="feedback"></p>
+    <button onclick="resetGame()">เริ่มใหม่</button> </div> 
+    <script src="script.js"></script>
+</body>
+</html>
